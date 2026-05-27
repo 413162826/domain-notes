@@ -66,11 +66,10 @@ git push -u origin main
 
 1. 浏览器打开 `https://github.com/<你的用户名>/domain-notes/settings/pages`
 2. **Source** 选 `Deploy from a branch`
-3. **Branch** 选 `main`，**Folder** 选 `/store/privacy`（关键！只暴露隐私目录）
-
-   > ⚠️ 如果 GitHub Pages 限制必须用 `/`、`/docs` 之类的根目录，复制 `store/privacy/index.html` 到项目根的 `docs/privacy.html`，然后 Pages 选 `/docs`，最终 URL 是 `https://<用户名>.github.io/domain-notes/privacy.html`
-
+3. **Branch** 选 `main`，**Folder** 选 `/docs`
 4. 保存后等 1-2 分钟，访问 `https://<你的用户名>.github.io/domain-notes/` 应该能看到隐私政策页
+
+> 隐私页源文件在 `store/privacy/index.html`，已经复制一份到 `docs/index.html` 让 GitHub Pages 部署。改动时记得两份同步（或者把 `docs/index.html` 删掉做成 symlink/script 自动拷贝）。
 
 **记下这个 URL**——Edge 提交表单要填。
 
