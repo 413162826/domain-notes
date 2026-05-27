@@ -1,0 +1,9 @@
+# Edge Add-ons 搜索关键词（最多 7 个，每个 30 字符内）
+
+笔记
+notes
+markdown
+域名
+domain
+本地存储
+local notes

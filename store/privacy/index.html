@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain Notes — 隐私政策 / Privacy Policy</title>
+  <meta name="description" content="Domain Notes 浏览器扩展的隐私政策。本扩展不收集、不上传、不分享任何用户数据，所有笔记均存储在用户本地浏览器中。">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-elev: #f7faff;
+      --text: #1c2b4a;
+      --text-muted: #4a5972;
+      --text-faint: #7a8aa3;
+      --border: #e3eaf5;
+      --accent: #2680eb;
+      --accent-bg: #eaf3ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1d24;
+        --bg-elev: #22262f;
+        --text: #ececec;
+        --text-muted: #b8c3d4;
+        --text-faint: #7a8aa3;
+        --border: #2e333d;
+        --accent: #5aa4ff;
+        --accent-bg: #1d2f4a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                   "Microsoft YaHei", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+    header {
+      background: linear-gradient(135deg, #3a8eff 0%, #1d63d4 100%);
+      color: #fff;
+      padding: 60px 24px 50px;
+      text-align: center;
+    }
+    header .logo {
+      width: 80px; height: 80px;
+      background: #fff;
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    header h1 { margin: 0; font-size: 36px; font-weight: 800; letter-spacing: -0.5px; }
+    header .tagline { margin-top: 10px; opacity: 0.9; font-size: 16px; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    .updated {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 44px;
+      margin-bottom: 14px;
+      color: var(--text);
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 26px;
+      margin-bottom: 8px;
+    }
+    p { margin: 10px 0; color: var(--text-muted); }
+    ul { padding-left: 24px; color: var(--text-muted); }
+    li { margin: 6px 0; }
+    strong { color: var(--text); font-weight: 700; }
+
+    .summary-box {
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .summary-box ul { margin: 8px 0; padding-left: 20px; }
+    .summary-box li::marker { color: var(--accent); }
+
+    .permission-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .permission-table th, .permission-table td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .permission-table th {
+      background: var(--bg-elev);
+      font-weight: 700;
+      color: var(--text);
+    }
+    .permission-table code {
+      background: var(--accent-bg);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: "SF Mono", Consolas, monospace;
+      font-size: 13px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 24px;
+      text-align: center;
+      color: var(--text-faint);
+      font-size: 13px;
+      margin-top: 60px;
+    }
+
+    .lang-switch { text-align: center; margin: 20px 0 30px; }
+    .lang-switch a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .lang-switch a:hover { text-decoration: underline; }
+
+    section.en h2 { border-left-color: #ffa726; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">📝</div>
+    <h1>Domain Notes</h1>
+    <div class="tagline">一个域名一本笔记 · 纯本地存储</div>
+  </header>
+
+  <main>
+    <div class="lang-switch">
+      <a href="#zh">中文</a> · <a href="#en">English</a>
+    </div>
+
+    <!-- ============ 中文 ============ -->
+    <section id="zh">
+      <span class="updated">最后更新：2026-05-27</span>
+
+      <h2>隐私政策</h2>
+
+      <div class="summary-box">
+        <strong>一句话总结：</strong> Domain Notes 是一个完全本地化的浏览器扩展。它<strong>不收集、不传输、不分享、不出售</strong>你的任何数据。所有笔记内容仅保存在你本地浏览器的存储区域中。
+      </div>
+
+      <h2>1. 我们收集什么数据</h2>
+      <p><strong>不收集任何数据。</strong> 本扩展不向作者、不向第三方、不向任何远程服务器发送任何信息。</p>
+
+      <h2>2. 数据如何存储</h2>
+      <p>所有笔记内容（包括文本、粘贴的图片）通过浏览器提供的 <code>chrome.storage.local</code> API 存储在你的本地设备上。具体特征：</p>
+      <ul>
+        <li>数据保存在你的浏览器配置目录内（典型位置：<code>...\User Data\Default\Local Extension Settings\&lt;扩展ID&gt;\</code>），仅本扩展可读写；</li>
+        <li>数据<strong>不会同步到云端</strong>（除非你的浏览器整体开启了配置同步并且扩展数据被纳入同步范围，但本扩展并未主动启用同步存储）；</li>
+        <li>卸载扩展时，浏览器会自动清除该存储空间；</li>
+        <li>你随时可以通过扩展内的"导出备份"功能下载所有数据为 JSON 文件。</li>
+      </ul>
+
+      <h2>3. 权限用途说明</h2>
+      <table class="permission-table">
+        <thead>
+          <tr><th>权限</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>storage</code></td>
+            <td>读写本地存储区域以保存你的笔记内容和域名索引。</td>
+          </tr>
+          <tr>
+            <td><code>unlimitedStorage</code></td>
+            <td>解除默认 10 MB 限制，使你能粘贴更多图片到笔记中。所有数据仍仅存储于本地。</td>
+          </tr>
+          <tr>
+            <td><code>activeTab</code></td>
+            <td>当你点击扩展图标时，读取当前标签页的 URL 和标题，<strong>仅用于</strong>解析当前域名（eTLD+1）以便加载对应笔记本，以及在"插入页面引用"功能中提供页面元信息。URL 和标题<strong>永远不会离开你的设备</strong>。</td>
+          </tr>
+          <tr>
+            <td><code>favicon</code></td>
+            <td>调用浏览器本地缓存的网站图标，用于在笔记本卡片上显示对应网站的 favicon。不发起任何网络请求。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>4. 第三方服务</h2>
+      <p>本扩展不集成任何第三方分析、跟踪、广告或云存储服务。代码中也不包含任何远程脚本加载。</p>
+
+      <h2>5. Cookies</h2>
+      <p>本扩展不使用 Cookies。</p>
+
+      <h2>6. 儿童隐私</h2>
+      <p>本扩展不针对 13 岁以下儿童设计，亦不会主动收集儿童信息（实际上不会收集任何人的信息）。</p>
+
+      <h2>7. 政策变更</h2>
+      <p>未来如果扩展功能发生变化（例如新增云同步等可选功能），本页面将相应更新。重大变更时会在扩展更新日志中提示用户。</p>
+
+      <h2>8. 联系方式</h2>
+      <p>如有任何问题或建议，请通过以下方式联系：</p>
+      <ul>
+        <li>GitHub Issues：<a href="https://github.com/&lt;your-github-user&gt;/domain-notes/issues">提交 Issue</a></li>
+        <li>邮箱：&lt;your-contact-email&gt;</li>
+      </ul>
+    </section>
+
+    <!-- ============ English ============ -->
+    <section id="en" class="en">
+      <h2>Privacy Policy (English)</h2>
+
+      <div class="summary-box">
+        <strong>TL;DR:</strong> Domain Notes is a fully local browser extension. It does <strong>not collect, transmit, share, or sell</strong> any user data. All notes are stored exclusively on your local device.
+      </div>
+
+      <h3>1. What we collect</h3>
+      <p><strong>Nothing.</strong> This extension sends no information to its authors, no third parties, and no remote servers.</p>
+
+      <h3>2. How data is stored</h3>
+      <p>All note content (text and pasted images) is stored locally via the browser's <code>chrome.storage.local</code> API, accessible only by this extension. Data is removed when the extension is uninstalled. You can export all data as JSON anytime via the in-app "Export" button.</p>
+
+      <h3>3. Permission justifications</h3>
+      <ul>
+        <li><code>storage</code> &amp; <code>unlimitedStorage</code> — to persist your notes and pasted images locally.</li>
+        <li><code>activeTab</code> — to read the current tab's URL/title for matching the correct notebook by domain (eTLD+1). This data never leaves your device.</li>
+        <li><code>favicon</code> — to display each site's icon from the browser's local favicon cache. No network requests are made.</li>
+      </ul>
+
+      <h3>4. Third parties</h3>
+      <p>None. No analytics, tracking, ads, or remote scripts.</p>
+
+      <h3>5. Contact</h3>
+      <p>GitHub Issues or email — see the Chinese section above.</p>
+    </section>
+  </main>
+
+  <footer>
+    Domain Notes © 2026 · Open Source · No tracking, no analytics, no surprises.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# 提交表单需要填写的元数据汇总
+
+类别 (Category): Productivity / 生产力工具
+副标题 (Subtitle, 可选): 一个域名一本笔记 Markdown 速记
+开发者显示名 (Author display name): <你的昵称>
+官网 URL (Website URL): https://413162826.github.io/domain-notes/
+支持 URL (Support URL): https://github.com/413162826/domain-notes/issues
+隐私政策 URL (Privacy policy URL): https://413162826.github.io/domain-notes/privacy/
+源代码 URL (可选): https://github.com/413162826/domain-notes
+版本: 1.1.0

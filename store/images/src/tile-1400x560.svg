@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="hBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a8eff"/>
+      <stop offset="100%" stop-color="#1d63d4"/>
+    </linearGradient>
+    <filter id="bigShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#0a1840" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="560" fill="url(#hBg)"/>
+
+  <!-- Decorative shapes -->
+  <circle cx="100" cy="500" r="180" fill="#fff" fill-opacity="0.04"/>
+  <circle cx="1300" cy="80" r="120" fill="#fff" fill-opacity="0.06"/>
+  <circle cx="800" cy="540" r="80" fill="#fff" fill-opacity="0.05"/>
+
+  <!-- Left text -->
+  <g transform="translate(80, 130)">
+    <text font-size="72" font-weight="800" fill="#fff">Domain Notes</text>
+    <text y="90" font-size="72" font-weight="800" fill="#fff">一个域名一本笔记</text>
+    <text y="146" font-size="22" fill="#cfe1ff" font-weight="500">浏览器里边看边记，Markdown 快捷键 · 粘贴图片 · 纯本地</text>
+
+    <!-- Chips -->
+    <g transform="translate(0, 200)">
+      <rect width="160" height="40" rx="20" fill="#fff" fill-opacity="0.18"/>
+      <text x="80" y="26" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">✓ 500ms 自动保存</text>
+      <rect x="170" width="160" height="40" rx="20" fill="#fff" fill-opacity="0.18"/>
+      <text x="250" y="26" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">✓ 深色模式</text>
+      <rect x="340" width="160" height="40" rx="20" fill="#fff" fill-opacity="0.18"/>
+      <text x="420" y="26" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">✓ 导入导出</text>
+    </g>
+  </g>
+
+  <!-- Right: popup mockup -->
+  <g transform="translate(890, 70)" filter="url(#bigShadow)">
+    <rect width="420" height="420" rx="12" fill="#fff"/>
+    <rect x="0" y="0" width="420" height="48" rx="12" fill="#fafafa"/>
+    <rect x="0" y="38" width="420" height="10" fill="#fafafa"/>
+    <rect x="0" y="47" width="420" height="1" fill="#ebebeb"/>
+    <rect x="14" y="14" width="20" height="20" rx="3" fill="#dfe7f3"/>
+    <text x="42" y="22" font-size="13" font-weight="700" fill="#1c2b4a">github.com</text>
+    <text x="42" y="38" font-size="10" fill="#7a8aa3">anthropics/claude-code</text>
+
+    <g transform="translate(24, 70)">
+      <text font-size="22" font-weight="700" fill="#1c2b4a">学习要点</text>
+      <text y="38" font-size="13" fill="#4a5972">• 项目结构</text>
+      <text y="62" font-size="13" fill="#4a5972">• MCP server 配置</text>
+
+      <rect y="80" width="372" height="34" rx="4" fill="#2b2b2b"/>
+      <text x="10" y="100" font-size="11" font-family="SF Mono" fill="#f8f8f2">claude --mcp add server.js</text>
+
+      <text y="142" font-size="13" fill="#4a5972">• 关键快捷键：</text>
+      <g transform="translate(14, 156)">
+        <rect width="60" height="20" rx="3" fill="#1c2b4a"/>
+        <text x="30" y="14" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" font-family="SF Mono">Ctrl+K</text>
+        <text x="80" y="14" font-size="12" fill="#4a5972">插入链接</text>
+      </g>
+      <g transform="translate(14, 184)">
+        <rect width="60" height="20" rx="3" fill="#1c2b4a"/>
+        <text x="30" y="14" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" font-family="SF Mono">Ctrl+L</text>
+        <text x="80" y="14" font-size="12" fill="#4a5972">无序列表</text>
+      </g>
+
+      <text y="234" font-size="13" font-weight="700" fill="#1c2b4a">待办：</text>
+      <g transform="translate(0, 246)">
+        <rect width="14" height="14" rx="3" fill="#2680eb"/>
+        <path d="M3 7 L6 10 L11 4" fill="none" stroke="#fff" stroke-width="2"/>
+        <text x="22" y="11" font-size="12" fill="#7a8aa3" text-decoration="line-through">读 quickstart</text>
+      </g>
+      <g transform="translate(0, 268)">
+        <rect width="14" height="14" rx="3" fill="none" stroke="#c6d1e5" stroke-width="1.5"/>
+        <text x="22" y="11" font-size="12" fill="#1c2b4a">测试 MCP 集成</text>
+      </g>
+    </g>
+
+    <rect x="0" y="391" width="420" height="29" fill="#fafafa"/>
+    <rect x="0" y="391" width="420" height="1" fill="#ebebeb"/>
+    <text x="14" y="410" font-size="10" fill="#4caf50" font-weight="700">✓</text>
+    <text x="24" y="410" font-size="10" fill="#999">已保存 · 刚刚</text>
+  </g>
+</svg>

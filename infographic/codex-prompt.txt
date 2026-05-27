@@ -1,0 +1,41 @@
+你的任务：为这个 Chrome 扩展生成一张中文信息图（infographic）。
+
+## 第一步：理解产品
+阅读以下文件了解功能：
+- README.md
+- manifest.json
+- src/editor.js（看快捷键定义）
+- src/main.js（看主交互）
+
+## 第二步：生成信息图
+创建一张纵向 SVG 信息图，保存到 `infographic/infographic-codex.svg`。
+
+要求：
+- 尺寸：1200×2400 左右
+- 中文为主（用 Microsoft YaHei / PingFang SC 字体栈）
+- 风格：现代、简洁、卡片化布局
+- 主色：#2680eb（匹配扩展配色），辅以浅蓝 #eaf3ff、深色 #1c2b4a
+- 内容必须覆盖：
+  1. Hero：品牌名 Domain Notes + 一句标语 + 核心卖点
+  2. 工作原理：eTLD+1 域名归属（不同子页/子域归入同一笔记）
+  3. 三步上手流程
+  4. Markdown 快捷键表（Ctrl+1~6 标题、Ctrl+B/I、Ctrl+L 列表、Ctrl+K 链接、Ctrl+Shift+T 待办等）
+  5. 输入即触发（# 空格变标题、- 空格变列表、1. 空格变编号、``` 变代码块等）
+  6. 特色功能：粘贴图片、深色模式、导出导入备份、当前页面引用插入
+  7. 页脚：安装方式提示
+
+设计原则：
+- 不要纯文字堆砌，多用图形/分组/卡片
+- 视觉层次清晰：每个 section 有编号标签 + 大标题 + 副标题
+- 使用阴影、圆角、渐变让卡片有立体感
+- 颜色不要太花哨，保持专业感
+
+## 第三步：渲染为 PNG
+SVG 写完后，执行：
+```
+node scripts/render-codex.js
+```
+（你需要先创建这个脚本：读取 infographic/infographic-codex.svg，用 sharp（已安装在 node_modules）以 density: 200 渲染成 infographic/infographic-codex.png）
+
+## 第四步：完成确认
+完成后输出文件路径和大小。不要做任何额外的事情。

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2520" viewBox="0 0 1200 2520" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a8eff"/>
+      <stop offset="100%" stop-color="#1d63d4"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f8ff"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1d63d4" flood-opacity="0.12"/>
+    </filter>
+    <filter id="lightShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#1d63d4" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .h1 { font-size: 64px; font-weight: 800; fill: #fff; }
+      .h2 { font-size: 22px; fill: #cfe1ff; font-weight: 500; }
+      .section-title { font-size: 36px; font-weight: 700; fill: #1c2b4a; }
+      .section-sub { font-size: 17px; fill: #6b7a92; }
+      .card-title { font-size: 20px; font-weight: 700; fill: #1c2b4a; }
+      .body { font-size: 15px; fill: #4a5972; }
+      .small { font-size: 13px; fill: #7a8aa3; }
+      .key { font-family: "SF Mono", Consolas, "Courier New", monospace; font-size: 14px; font-weight: 600; fill: #1c2b4a; }
+      .mono { font-family: "SF Mono", Consolas, "Courier New", monospace; }
+      .label { font-size: 13px; fill: #6b7a92; font-weight: 600; letter-spacing: 1px; }
+      .step-num { font-size: 48px; font-weight: 800; fill: #2680eb; opacity: 0.9; }
+      .accent { fill: #2680eb; }
+      .domain-text { font-family: "SF Mono", Consolas, monospace; font-size: 14px; fill: #1668c7; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- ============ HERO ============ -->
+  <rect width="1200" height="420" fill="url(#heroBg)"/>
+  <rect x="0" y="0" width="1200" height="210" fill="#fff" fill-opacity="0.05"/>
+
+  <!-- Icon: same design as extension icon -->
+  <g transform="translate(80, 96)">
+    <rect width="180" height="180" rx="38" fill="#fff" fill-opacity="0.15"/>
+    <g transform="translate(38, 30)">
+      <rect width="104" height="125" rx="10" fill="#fff"/>
+      <path d="M88 0 L104 16 L88 16 Z" fill="#dde6f3"/>
+      <rect x="14" y="22" width="76" height="7" rx="3.5" fill="#5a8fd6"/>
+      <rect x="14" y="40" width="76" height="7" rx="3.5" fill="#bfd1e8"/>
+      <rect x="14" y="58" width="58" height="7" rx="3.5" fill="#bfd1e8"/>
+      <rect x="14" y="76" width="66" height="7" rx="3.5" fill="#bfd1e8"/>
+      <rect x="14" y="94" width="42" height="7" rx="3.5" fill="#bfd1e8"/>
+      <circle cx="112" cy="116" r="26" fill="#ffce3a" stroke="#fff" stroke-width="5"/>
+      <line x1="112" y1="90" x2="112" y2="142" stroke="#d68b00" stroke-width="2.6" stroke-opacity="0.55"/>
+      <ellipse cx="112" cy="116" rx="26" ry="11" fill="none" stroke="#d68b00" stroke-width="2.6" stroke-opacity="0.55"/>
+    </g>
+  </g>
+
+  <text x="300" y="180" class="h1">Domain Notes</text>
+  <text x="300" y="230" class="h2">一个域名一本笔记，浏览器里边看边记</text>
+  <g transform="translate(300, 270)">
+    <rect width="220" height="36" rx="18" fill="#fff" fill-opacity="0.2"/>
+    <text x="20" y="24" fill="#fff" font-size="14" font-weight="600">✓ 纯本地存储</text>
+    <rect x="240" width="220" height="36" rx="18" fill="#fff" fill-opacity="0.2"/>
+    <text x="260" y="24" fill="#fff" font-size="14" font-weight="600">✓ Markdown 快捷键</text>
+    <rect x="480" width="220" height="36" rx="18" fill="#fff" fill-opacity="0.2"/>
+    <text x="500" y="24" fill="#fff" font-size="14" font-weight="600">✓ 粘贴图片即插入</text>
+  </g>
+
+  <!-- ============ SECTION 1: 工作原理 ============ -->
+  <g transform="translate(0, 470)">
+    <text x="80" y="40" class="label">01 / 核心理念</text>
+    <text x="80" y="86" class="section-title">eTLD+1 自动归属</text>
+    <text x="80" y="118" class="section-sub">不同子页、不同子域，自动落进同一本笔记本</text>
+
+    <!-- Three tabs flowing into one notebook -->
+    <g transform="translate(80, 160)">
+      <!-- Tabs -->
+      <g filter="url(#lightShadow)">
+        <rect x="0" y="0" width="280" height="58" rx="8" fill="#fff" stroke="#e3eaf5"/>
+        <circle cx="22" cy="29" r="9" fill="#ff7676"/>
+        <circle cx="42" cy="29" r="9" fill="#ffcc3a"/>
+        <circle cx="62" cy="29" r="9" fill="#5fcd6f"/>
+        <text x="90" y="34" class="domain-text">github.com/anthropics</text>
+      </g>
+      <g filter="url(#lightShadow)" transform="translate(0, 76)">
+        <rect x="0" y="0" width="280" height="58" rx="8" fill="#fff" stroke="#e3eaf5"/>
+        <circle cx="22" cy="29" r="9" fill="#ff7676"/>
+        <circle cx="42" cy="29" r="9" fill="#ffcc3a"/>
+        <circle cx="62" cy="29" r="9" fill="#5fcd6f"/>
+        <text x="90" y="34" class="domain-text">docs.github.com/en</text>
+      </g>
+      <g filter="url(#lightShadow)" transform="translate(0, 152)">
+        <rect x="0" y="0" width="280" height="58" rx="8" fill="#fff" stroke="#e3eaf5"/>
+        <circle cx="22" cy="29" r="9" fill="#ff7676"/>
+        <circle cx="42" cy="29" r="9" fill="#ffcc3a"/>
+        <circle cx="62" cy="29" r="9" fill="#5fcd6f"/>
+        <text x="90" y="34" class="domain-text">api.github.com/v3</text>
+      </g>
+
+      <!-- Arrows -->
+      <g stroke="#2680eb" stroke-width="2.5" fill="none" stroke-linecap="round">
+        <path d="M 290 29 Q 360 29 400 105" marker-end="url(#arrow)"/>
+        <path d="M 290 105 L 400 105" marker-end="url(#arrow)"/>
+        <path d="M 290 181 Q 360 181 400 105" marker-end="url(#arrow)"/>
+      </g>
+
+      <!-- Notebook destination -->
+      <g transform="translate(440, 30)" filter="url(#cardShadow)">
+        <rect width="240" height="160" rx="12" fill="#fff" stroke="#2680eb" stroke-width="2"/>
+        <rect x="0" y="0" width="240" height="44" rx="12" fill="#2680eb"/>
+        <rect x="0" y="32" width="240" height="12" fill="#2680eb"/>
+        <text x="20" y="29" fill="#fff" font-size="15" font-weight="700">📝 github.com</text>
+        <rect x="20" y="60" width="160" height="8" rx="4" fill="#e3eaf5"/>
+        <rect x="20" y="76" width="200" height="8" rx="4" fill="#e3eaf5"/>
+        <rect x="20" y="92" width="140" height="8" rx="4" fill="#e3eaf5"/>
+        <rect x="20" y="108" width="180" height="8" rx="4" fill="#e3eaf5"/>
+        <rect x="20" y="124" width="100" height="8" rx="4" fill="#e3eaf5"/>
+        <text x="20" y="152" class="small">一本笔记 · 自动汇总</text>
+      </g>
+    </g>
+  </g>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2680eb"/>
+    </marker>
+  </defs>
+
+  <!-- ============ SECTION 2: 三步上手 ============ -->
+  <g transform="translate(0, 870)">
+    <rect x="0" y="0" width="1200" height="280" fill="#f7faff"/>
+    <text x="80" y="50" class="label">02 / 三步上手</text>
+    <text x="80" y="96" class="section-title">点开即写，不打断浏览</text>
+
+    <g transform="translate(80, 140)">
+      <g filter="url(#cardShadow)">
+        <rect width="320" height="110" rx="12" fill="#fff"/>
+        <text x="24" y="62" class="step-num">1</text>
+        <text x="80" y="48" class="card-title">访问网站</text>
+        <text x="80" y="74" class="body">打开任意 https 页面</text>
+      </g>
+      <g transform="translate(360, 0)" filter="url(#cardShadow)">
+        <rect width="320" height="110" rx="12" fill="#fff"/>
+        <text x="24" y="62" class="step-num">2</text>
+        <text x="80" y="48" class="card-title">点击插件</text>
+        <text x="80" y="74" class="body">自动匹配域名笔记</text>
+      </g>
+      <g transform="translate(720, 0)" filter="url(#cardShadow)">
+        <rect width="320" height="110" rx="12" fill="#fff"/>
+        <text x="24" y="62" class="step-num">3</text>
+        <text x="80" y="48" class="card-title">开始记录</text>
+        <text x="80" y="74" class="body">500ms 自动保存</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============ SECTION 3: 快捷键 ============ -->
+  <g transform="translate(0, 1200)">
+    <text x="80" y="40" class="label">03 / Markdown 快捷键</text>
+    <text x="80" y="86" class="section-title">手不离键盘</text>
+    <text x="80" y="118" class="section-sub">所有快捷键在编辑器获得焦点时生效，标准 Markdown 编辑器键位</text>
+
+    <g transform="translate(80, 160)">
+      <!-- Row 1 -->
+      <g>
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl + 1~6</text>
+        <text x="128" y="40" class="body">标题 H1–H6</text>
+      </g>
+      <g transform="translate(280, 0)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl + B</text>
+        <text x="128" y="40" class="body">粗体</text>
+      </g>
+      <g transform="translate(560, 0)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl + I</text>
+        <text x="128" y="40" class="body">斜体</text>
+      </g>
+      <g transform="translate(840, 0)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl + L</text>
+        <text x="128" y="40" class="body">无序列表</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="12" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl+Shift+L</text>
+        <text x="128" y="40" class="body">有序列表</text>
+      </g>
+      <g transform="translate(280, 80)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="12" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl+Shift+T</text>
+        <text x="128" y="40" class="body">待办列表</text>
+      </g>
+      <g transform="translate(560, 80)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="12" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl+Shift+B</text>
+        <text x="128" y="40" class="body">引用块</text>
+      </g>
+      <g transform="translate(840, 80)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="12" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl+Shift+C</text>
+        <text x="128" y="40" class="body">代码块</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 160)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl + K</text>
+        <text x="128" y="40" class="body">插入链接</text>
+      </g>
+      <g transform="translate(280, 160)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="12" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl+Shift+H</text>
+        <text x="128" y="40" class="body">分割线</text>
+      </g>
+      <g transform="translate(560, 160)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="url(#cardBg)" stroke="#e3eaf5"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#1c2b4a"/>
+        <text x="64" y="37" fill="#fff" font-size="12" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl+Shift+R</text>
+        <text x="128" y="40" class="body">插入当前页面</text>
+      </g>
+      <g transform="translate(840, 160)">
+        <rect x="0" y="0" width="260" height="64" rx="10" fill="#eaf3ff" stroke="#2680eb"/>
+        <rect x="14" y="18" width="100" height="28" rx="6" fill="#2680eb"/>
+        <text x="64" y="37" fill="#fff" font-size="13" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">Ctrl + /</text>
+        <text x="128" y="40" fill="#1668c7" font-size="15" font-weight="600">所有笔记</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============ SECTION 4: 输入触发 ============ -->
+  <g transform="translate(0, 1620)">
+    <rect x="0" y="0" width="1200" height="460" fill="#f7faff"/>
+    <text x="80" y="50" class="label">04 / 输入即触发</text>
+    <text x="80" y="96" class="section-title">不用记 Markdown 语法</text>
+    <text x="80" y="128" class="section-sub">行首敲下这些符号，自动变成对应格式</text>
+
+    <g transform="translate(80, 170)">
+      <!-- Trigger examples grouped -->
+      <g>
+        <rect width="500" height="240" rx="12" fill="#fff" filter="url(#lightShadow)"/>
+
+        <g transform="translate(24, 36)">
+          <rect width="120" height="34" rx="6" fill="#1c2b4a"/>
+          <text x="60" y="22" fill="#fff" font-size="14" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">#·空格</text>
+          <text x="140" y="22" class="body" font-size="14">→</text>
+          <text x="170" y="24" class="card-title" font-size="22" font-weight="700">大标题</text>
+        </g>
+
+        <g transform="translate(24, 86)">
+          <rect width="120" height="34" rx="6" fill="#1c2b4a"/>
+          <text x="60" y="22" fill="#fff" font-size="14" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">##·空格</text>
+          <text x="140" y="22" class="body" font-size="14">→</text>
+          <text x="170" y="24" class="card-title" font-size="18">二级标题</text>
+        </g>
+
+        <g transform="translate(24, 136)">
+          <rect width="120" height="34" rx="6" fill="#1c2b4a"/>
+          <text x="60" y="22" fill="#fff" font-size="14" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">-·空格</text>
+          <text x="140" y="22" class="body" font-size="14">→</text>
+          <text x="170" y="24" class="body" font-size="15">• 无序列表项</text>
+        </g>
+
+        <g transform="translate(24, 186)">
+          <rect width="120" height="34" rx="6" fill="#1c2b4a"/>
+          <text x="60" y="22" fill="#fff" font-size="14" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">1.·空格</text>
+          <text x="140" y="22" class="body" font-size="14">→</text>
+          <text x="170" y="24" class="body" font-size="15">1. 编号列表项</text>
+        </g>
+      </g>
+
+      <g transform="translate(540, 0)">
+        <rect width="500" height="240" rx="12" fill="#fff" filter="url(#lightShadow)"/>
+
+        <g transform="translate(24, 36)">
+          <rect width="120" height="34" rx="6" fill="#1c2b4a"/>
+          <text x="60" y="22" fill="#fff" font-size="14" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">&gt;·空格</text>
+          <text x="140" y="22" class="body" font-size="14">→</text>
+          <g transform="translate(170, 6)">
+            <rect width="4" height="24" fill="#d0d0d0"/>
+            <text x="14" y="18" class="body" font-size="14" fill="#666">引用块文字</text>
+          </g>
+        </g>
+
+        <g transform="translate(24, 86)">
+          <rect width="120" height="34" rx="6" fill="#1c2b4a"/>
+          <text x="60" y="22" fill="#fff" font-size="14" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">```</text>
+          <text x="140" y="22" class="body" font-size="14">→</text>
+          <rect x="170" y="0" width="180" height="34" rx="4" fill="#2b2b2b"/>
+          <text x="180" y="22" fill="#f8f8f2" font-size="13" font-family="SF Mono, Consolas, monospace">代码块</text>
+        </g>
+
+        <g transform="translate(24, 136)">
+          <rect width="120" height="34" rx="6" fill="#1c2b4a"/>
+          <text x="60" y="22" fill="#fff" font-size="14" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">**粗**</text>
+          <text x="140" y="22" class="body" font-size="14">→</text>
+          <text x="170" y="24" class="body" font-size="15" font-weight="700" fill="#1c2b4a">粗体文字</text>
+        </g>
+
+        <g transform="translate(24, 186)">
+          <rect width="120" height="34" rx="6" fill="#1c2b4a"/>
+          <text x="60" y="22" fill="#fff" font-size="14" font-weight="700" text-anchor="middle" font-family="SF Mono, Consolas, monospace">---</text>
+          <text x="140" y="22" class="body" font-size="14">→</text>
+          <line x1="170" y1="18" x2="340" y2="18" stroke="#d0d0d0" stroke-width="1.5"/>
+          <text x="170" y="34" class="small">分割线</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============ SECTION 5: 特色功能 ============ -->
+  <g transform="translate(0, 2120)">
+    <text x="80" y="40" class="label">05 / 锦上添花</text>
+    <text x="80" y="86" class="section-title">小而美的细节</text>
+
+    <g transform="translate(80, 130)">
+      <!-- Feature 1 -->
+      <g filter="url(#lightShadow)">
+        <rect width="260" height="200" rx="12" fill="#fff"/>
+        <g transform="translate(20, 24)">
+          <rect width="48" height="48" rx="10" fill="#eaf3ff"/>
+          <text x="24" y="34" text-anchor="middle" font-size="26">🔗</text>
+        </g>
+        <text x="20" y="106" class="card-title">一键插入页面引用</text>
+        <text x="20" y="140" class="body">点击 🔗 把当前 tab 的标题和 URL</text>
+        <text x="20" y="160" class="body">作为引用块插入笔记</text>
+        <rect x="20" y="172" width="100" height="18" rx="4" fill="#f0f4fa"/>
+        <text x="70" y="186" class="key" text-anchor="middle">Ctrl+Shift+R</text>
+      </g>
+
+      <!-- Feature 2 -->
+      <g transform="translate(280, 0)" filter="url(#lightShadow)">
+        <rect width="260" height="200" rx="12" fill="#fff"/>
+        <g transform="translate(20, 24)">
+          <rect width="48" height="48" rx="10" fill="#fff5d6"/>
+          <text x="24" y="34" text-anchor="middle" font-size="26">🖼️</text>
+        </g>
+        <text x="20" y="106" class="card-title">粘贴/拖拽图片</text>
+        <text x="20" y="140" class="body">截图直接 Ctrl+V，自动转 base64</text>
+        <text x="20" y="160" class="body">点击图片全屏 lightbox 预览</text>
+        <rect x="20" y="172" width="100" height="18" rx="4" fill="#f0f4fa"/>
+        <text x="70" y="186" class="key" text-anchor="middle">Ctrl + V</text>
+      </g>
+
+      <!-- Feature 3 -->
+      <g transform="translate(560, 0)" filter="url(#lightShadow)">
+        <rect width="260" height="200" rx="12" fill="#fff"/>
+        <g transform="translate(20, 24)">
+          <rect width="48" height="48" rx="10" fill="#1c2b4a"/>
+          <text x="24" y="34" text-anchor="middle" font-size="22" fill="#fff">🌙</text>
+        </g>
+        <text x="20" y="106" class="card-title">自动深色模式</text>
+        <text x="20" y="140" class="body">跟随系统主题切换</text>
+        <text x="20" y="160" class="body">夜里写也不刺眼</text>
+        <rect x="20" y="172" width="160" height="18" rx="4" fill="#f0f4fa"/>
+        <text x="100" y="186" class="key" text-anchor="middle">prefers-color-scheme</text>
+      </g>
+
+      <!-- Feature 4 -->
+      <g transform="translate(840, 0)" filter="url(#lightShadow)">
+        <rect width="260" height="200" rx="12" fill="#fff"/>
+        <g transform="translate(20, 24)">
+          <rect width="48" height="48" rx="10" fill="#e7f7e8"/>
+          <text x="24" y="34" text-anchor="middle" font-size="26">💾</text>
+        </g>
+        <text x="20" y="106" class="card-title">导出 / 导入备份</text>
+        <text x="20" y="140" class="body">JSON 一键导出全部笔记</text>
+        <text x="20" y="160" class="body">换电脑、做备份都方便</text>
+        <rect x="20" y="172" width="100" height="18" rx="4" fill="#f0f4fa"/>
+        <text x="70" y="186" class="key" text-anchor="middle">⬇ ⬆</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============ FOOTER ============ -->
+  <g transform="translate(0, 2400)">
+    <rect x="0" y="0" width="1200" height="120" fill="#1c2b4a"/>
+    <text x="80" y="56" fill="#fff" font-size="20" font-weight="700">Domain Notes</text>
+    <text x="80" y="84" fill="#8aa0c4" font-size="13">纯本地存储 · 卸载即清空 · 记得定期导出备份</text>
+    <text x="1120" y="56" fill="#fff" font-size="13" text-anchor="end" font-weight="600">Chrome MV3 扩展</text>
+    <text x="1120" y="84" fill="#8aa0c4" font-size="13" text-anchor="end" font-family="SF Mono, Consolas, monospace">chrome://extensions → 加载已解压</text>
+  </g>
+</svg>

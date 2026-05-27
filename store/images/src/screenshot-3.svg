@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8f5ec"/>
+      <stop offset="100%" stop-color="#d4ecd9"/>
+    </linearGradient>
+    <filter id="popupShadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#1c4530" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="800" fill="url(#bg3)"/>
+
+  <!-- Left text -->
+  <g transform="translate(70, 100)">
+    <rect width="6" height="60" rx="3" fill="#3fa961"/>
+    <text x="20" y="40" font-size="44" font-weight="800" fill="#1c2b4a">所有笔记</text>
+    <text x="20" y="92" font-size="44" font-weight="800" fill="#1c2b4a">一目了然</text>
+    <text x="20" y="140" font-size="18" fill="#3f5b46" font-weight="500">网格视图 · 按修改时间排序</text>
+    <text x="20" y="166" font-size="18" fill="#3f5b46" font-weight="500">每张卡显示网站图标 · 内容预览</text>
+
+    <g transform="translate(0, 220)">
+      <g transform="translate(0, 0)">
+        <rect width="42" height="42" rx="10" fill="#fff" stroke="#3fa961" stroke-width="2"/>
+        <text x="21" y="29" font-size="20" text-anchor="middle">🔍</text>
+        <text x="60" y="20" font-size="16" font-weight="700" fill="#1c2b4a">快速切换</text>
+        <text x="60" y="40" font-size="13" fill="#3f5b46">点击卡片即跳转到对应笔记</text>
+      </g>
+      <g transform="translate(0, 70)">
+        <rect width="42" height="42" rx="10" fill="#fff" stroke="#3fa961" stroke-width="2"/>
+        <text x="21" y="29" font-size="20" text-anchor="middle">🗑</text>
+        <text x="60" y="20" font-size="16" font-weight="700" fill="#1c2b4a">悬停删除</text>
+        <text x="60" y="40" font-size="13" fill="#3f5b46">鼠标移上去出现 × 按钮</text>
+      </g>
+      <g transform="translate(0, 140)">
+        <rect width="42" height="42" rx="10" fill="#fff" stroke="#3fa961" stroke-width="2"/>
+        <text x="21" y="29" font-size="20" text-anchor="middle">⌨</text>
+        <text x="60" y="20" font-size="16" font-weight="700" fill="#1c2b4a">键盘切换</text>
+        <text x="60" y="40" font-size="13" fill="#3f5b46">Ctrl + / 一键切换</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Popup mock with folder view -->
+  <g transform="translate(770, 80)" filter="url(#popupShadow3)">
+    <rect width="450" height="640" rx="10" fill="#fff"/>
+
+    <!-- Header -->
+    <rect x="0" y="0" width="450" height="48" rx="10" fill="#fafafa"/>
+    <rect x="0" y="38" width="450" height="10" fill="#fafafa"/>
+    <rect x="0" y="47" width="450" height="1" fill="#ebebeb"/>
+
+    <g transform="translate(14, 14)">
+      <rect width="22" height="22" rx="4" fill="none"/>
+      <path d="M19 11 H4 M11 18 L4 11 L11 4" fill="none" stroke="#4a5972" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="46" y="24" font-size="13" font-weight="700" fill="#1c2b4a">所有笔记</text>
+    <text x="46" y="38" font-size="10" fill="#7a8aa3">共 6 本 · 按修改时间排序</text>
+
+    <g transform="translate(386, 14)">
+      <rect width="22" height="22" rx="4" fill="none"/>
+      <path d="M5 14 V18 a2 2 0 002 2 h10 a2 2 0 002 -2 V14 M9 8 L12 5 L15 8 M12 5 V14" fill="none" stroke="#6b7a92" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(414, 14)">
+      <rect width="22" height="22" rx="4" fill="none"/>
+      <path d="M5 10 V6 a2 2 0 012 -2 h10 a2 2 0 012 2 V10 M9 16 L12 19 L15 16 M12 19 V10" fill="none" stroke="#6b7a92" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Cards grid -->
+    <g transform="translate(14, 64)">
+      <!-- Active card -->
+      <g>
+        <rect width="206" height="118" rx="6" fill="#f0f7ff" stroke="#2680eb" stroke-width="1.5"/>
+        <circle cx="22" cy="22" r="6" fill="#24292f"/>
+        <text x="22" y="26" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">G</text>
+        <text x="36" y="26" font-size="12" font-weight="700" fill="#1668c7">github.com</text>
+        <text x="14" y="50" font-size="10" fill="#4a5972">Claude Code 配置笔记...</text>
+        <text x="14" y="66" font-size="10" fill="#4a5972">npm i -g @anthropic...</text>
+        <text x="14" y="82" font-size="10" fill="#4a5972">关键快捷键：Ctrl+B...</text>
+        <text x="14" y="106" font-size="9" fill="#aaa">刚刚</text>
+      </g>
+
+      <g transform="translate(216, 0)">
+        <rect width="206" height="118" rx="6" fill="#fff" stroke="#e4e4e4"/>
+        <circle cx="22" cy="22" r="6" fill="#1668c7"/>
+        <text x="22" y="26" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">M</text>
+        <text x="36" y="26" font-size="12" font-weight="700" fill="#1668c7">mdn.dev</text>
+        <text x="14" y="50" font-size="10" fill="#4a5972">CSS Grid 学习笔记</text>
+        <text x="14" y="66" font-size="10" fill="#4a5972">grid-template-areas...</text>
+        <text x="14" y="82" font-size="10" fill="#4a5972">place-items 居中...</text>
+        <text x="14" y="106" font-size="9" fill="#aaa">2 小时前</text>
+      </g>
+
+      <g transform="translate(0, 128)">
+        <rect width="206" height="118" rx="6" fill="#fff" stroke="#e4e4e4"/>
+        <circle cx="22" cy="22" r="6" fill="#ff6b00"/>
+        <text x="22" y="26" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">A</text>
+        <text x="36" y="26" font-size="12" font-weight="700" fill="#1668c7">anthropic.com</text>
+        <text x="14" y="50" font-size="10" fill="#4a5972">Claude API 使用要点</text>
+        <text x="14" y="66" font-size="10" fill="#4a5972">prompt cache 5 分钟...</text>
+        <text x="14" y="82" font-size="10" fill="#4a5972">tool use schema 参考</text>
+        <text x="14" y="106" font-size="9" fill="#aaa">昨天</text>
+      </g>
+
+      <g transform="translate(216, 128)">
+        <rect width="206" height="118" rx="6" fill="#fff" stroke="#e4e4e4"/>
+        <circle cx="22" cy="22" r="6" fill="#f25022"/>
+        <text x="22" y="26" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">S</text>
+        <text x="36" y="26" font-size="12" font-weight="700" fill="#1668c7">stackoverflow.com</text>
+        <text x="14" y="50" font-size="10" fill="#4a5972">常见报错收集</text>
+        <text x="14" y="66" font-size="10" fill="#4a5972">CORS preflight 问题...</text>
+        <text x="14" y="82" font-size="10" fill="#4a5972">ESM/CommonJS 互操作</text>
+        <text x="14" y="106" font-size="9" fill="#aaa">3 天前</text>
+      </g>
+
+      <g transform="translate(0, 256)">
+        <rect width="206" height="118" rx="6" fill="#fff" stroke="#e4e4e4"/>
+        <circle cx="22" cy="22" r="6" fill="#1668c7"/>
+        <text x="22" y="26" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">N</text>
+        <text x="36" y="26" font-size="12" font-weight="700" fill="#1668c7">notion.so</text>
+        <text x="14" y="50" font-size="10" fill="#4a5972">数据库公式参考</text>
+        <text x="14" y="66" font-size="10" fill="#4a5972">rollup() 用法...</text>
+        <text x="14" y="82" font-size="10" fill="#4a5972">prop 取值技巧</text>
+        <text x="14" y="106" font-size="9" fill="#aaa">5 天前</text>
+      </g>
+
+      <g transform="translate(216, 256)">
+        <rect width="206" height="118" rx="6" fill="#fff" stroke="#e4e4e4"/>
+        <circle cx="22" cy="22" r="6" fill="#cc0000"/>
+        <text x="22" y="26" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">Y</text>
+        <text x="36" y="26" font-size="12" font-weight="700" fill="#1668c7">youtube.com</text>
+        <text x="14" y="50" font-size="10" fill="#4a5972">教程收藏</text>
+        <text x="14" y="66" font-size="10" fill="#4a5972">Rust 入门系列...</text>
+        <text x="14" y="82" font-size="10" fill="#4a5972">Tiptap 深度解析</text>
+        <text x="14" y="106" font-size="9" fill="#aaa">1 周前</text>
+      </g>
+
+      <g transform="translate(0, 384)">
+        <rect width="422" height="118" rx="6" fill="#f8fbff" stroke="#dde2ea" stroke-dasharray="4 4"/>
+        <text x="211" y="62" font-size="13" font-weight="600" fill="#7a8aa3" text-anchor="middle">访问任意网站，点击插件即可继续添加</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1320"/>
+      <stop offset="50%" stop-color="#1a1f30"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </linearGradient>
+    <linearGradient id="bg5Light" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eaf3ff"/>
+    </linearGradient>
+    <filter id="popupShadowDark" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="popupShadowLight" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#1c3470" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Split background: dark left, light right -->
+  <rect x="0" y="0" width="640" height="800" fill="url(#bg5)"/>
+  <rect x="640" y="0" width="640" height="800" fill="url(#bg5Light)"/>
+
+  <!-- Center labels -->
+  <g transform="translate(640, 60)">
+    <text x="-320" y="0" font-size="13" font-weight="700" fill="#5aa4ff" text-anchor="middle" letter-spacing="2">🌙 DARK MODE</text>
+    <text x="320" y="0" font-size="13" font-weight="700" fill="#2680eb" text-anchor="middle" letter-spacing="2">☀️ LIGHT MODE</text>
+  </g>
+
+  <!-- Center title -->
+  <g transform="translate(640, 120)">
+    <text x="0" y="0" font-size="48" font-weight="800" text-anchor="middle" fill="#fff" stroke="#1c2b4a" stroke-width="4" paint-order="stroke">深色模式自动跟随系统</text>
+    <text x="0" y="36" font-size="18" font-weight="500" text-anchor="middle" fill="#cfd6e0" stroke="#1c2b4a" stroke-width="3" paint-order="stroke">夜里写也不刺眼</text>
+  </g>
+
+  <!-- Dark popup (left) -->
+  <g transform="translate(120, 220)" filter="url(#popupShadowDark)">
+    <rect width="400" height="520" rx="10" fill="#1c1c1e"/>
+    <rect x="0" y="0" width="400" height="48" rx="10" fill="#252528"/>
+    <rect x="0" y="38" width="400" height="10" fill="#252528"/>
+    <rect x="0" y="47" width="400" height="1" fill="#34343a"/>
+    <rect x="14" y="14" width="20" height="20" rx="3" fill="#3a4760"/>
+    <text x="42" y="22" font-size="13" font-weight="700" fill="#ececec">vscode.dev</text>
+    <text x="42" y="38" font-size="10" fill="#7a8aa3">编辑器配置笔记</text>
+
+    <g transform="translate(20, 70)">
+      <text font-size="22" font-weight="700" fill="#ececec">个人配置</text>
+
+      <text y="36" font-size="13" fill="#b0b8c8">主题设置：</text>
+      <rect x="14" y="44" width="160" height="22" rx="4" fill="#2e2e34"/>
+      <text x="22" y="60" font-size="11" font-family="SF Mono" fill="#ff9a9a">"workbench.colorTheme"</text>
+
+      <text y="92" font-size="13" fill="#b0b8c8">必装插件：</text>
+      <text x="14" y="116" font-size="13" fill="#ececec">• Prettier — 自动格式化</text>
+      <text x="14" y="138" font-size="13" fill="#ececec">• ESLint — 静态检查</text>
+      <text x="14" y="160" font-size="13" fill="#ececec">• GitLens — Git 增强</text>
+      <text x="14" y="182" font-size="13" fill="#ececec">• Error Lens — 内联错误</text>
+
+      <text y="216" font-size="13" fill="#b0b8c8">快捷键：</text>
+      <g transform="translate(14, 224)">
+        <rect width="100" height="20" rx="3" fill="#3a4760"/>
+        <text x="50" y="14" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" font-family="SF Mono">Ctrl + P</text>
+        <text x="116" y="14" font-size="12" fill="#ececec">快速打开文件</text>
+      </g>
+      <g transform="translate(14, 252)">
+        <rect width="100" height="20" rx="3" fill="#3a4760"/>
+        <text x="50" y="14" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" font-family="SF Mono">Ctrl + `</text>
+        <text x="116" y="14" font-size="12" fill="#ececec">打开终端</text>
+      </g>
+
+      <text y="298" font-size="13" fill="#b0b8c8">设置同步：</text>
+      <g transform="translate(0, 308)">
+        <rect width="14" height="14" rx="3" fill="#5aa4ff"/>
+        <path d="M3 7 L6 10 L11 4" fill="none" stroke="#1c1c1e" stroke-width="2" stroke-linecap="round"/>
+        <text x="22" y="11" font-size="12" fill="#7a8aa3" text-decoration="line-through">登录 GitHub</text>
+      </g>
+      <g transform="translate(0, 328)">
+        <rect width="14" height="14" rx="3" fill="none" stroke="#4a4a50" stroke-width="1.5"/>
+        <text x="22" y="11" font-size="12" fill="#ececec">导出 keybindings</text>
+      </g>
+    </g>
+
+    <rect x="0" y="491" width="400" height="29" fill="#252528"/>
+    <rect x="0" y="491" width="400" height="1" fill="#34343a"/>
+    <text x="14" y="510" font-size="10" fill="#4caf50" font-weight="700">✓</text>
+    <text x="24" y="510" font-size="10" fill="#7a8aa3">已保存 · 23:14</text>
+  </g>
+
+  <!-- Light popup (right) -->
+  <g transform="translate(760, 220)" filter="url(#popupShadowLight)">
+    <rect width="400" height="520" rx="10" fill="#ffffff"/>
+    <rect x="0" y="0" width="400" height="48" rx="10" fill="#fafafa"/>
+    <rect x="0" y="38" width="400" height="10" fill="#fafafa"/>
+    <rect x="0" y="47" width="400" height="1" fill="#ebebeb"/>
+    <rect x="14" y="14" width="20" height="20" rx="3" fill="#dfe7f3"/>
+    <text x="42" y="22" font-size="13" font-weight="700" fill="#1c2b4a">vscode.dev</text>
+    <text x="42" y="38" font-size="10" fill="#7a8aa3">编辑器配置笔记</text>
+
+    <g transform="translate(20, 70)">
+      <text font-size="22" font-weight="700" fill="#1c2b4a">个人配置</text>
+
+      <text y="36" font-size="13" fill="#4a5972">主题设置：</text>
+      <rect x="14" y="44" width="160" height="22" rx="4" fill="#f4f4f4"/>
+      <text x="22" y="60" font-size="11" font-family="SF Mono" fill="#c7254e">"workbench.colorTheme"</text>
+
+      <text y="92" font-size="13" fill="#4a5972">必装插件：</text>
+      <text x="14" y="116" font-size="13" fill="#1c2b4a">• Prettier — 自动格式化</text>
+      <text x="14" y="138" font-size="13" fill="#1c2b4a">• ESLint — 静态检查</text>
+      <text x="14" y="160" font-size="13" fill="#1c2b4a">• GitLens — Git 增强</text>
+      <text x="14" y="182" font-size="13" fill="#1c2b4a">• Error Lens — 内联错误</text>
+
+      <text y="216" font-size="13" fill="#4a5972">快捷键：</text>
+      <g transform="translate(14, 224)">
+        <rect width="100" height="20" rx="3" fill="#1c2b4a"/>
+        <text x="50" y="14" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" font-family="SF Mono">Ctrl + P</text>
+        <text x="116" y="14" font-size="12" fill="#1c2b4a">快速打开文件</text>
+      </g>
+      <g transform="translate(14, 252)">
+        <rect width="100" height="20" rx="3" fill="#1c2b4a"/>
+        <text x="50" y="14" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" font-family="SF Mono">Ctrl + `</text>
+        <text x="116" y="14" font-size="12" fill="#1c2b4a">打开终端</text>
+      </g>
+
+      <text y="298" font-size="13" fill="#4a5972">设置同步：</text>
+      <g transform="translate(0, 308)">
+        <rect width="14" height="14" rx="3" fill="#2680eb"/>
+        <path d="M3 7 L6 10 L11 4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        <text x="22" y="11" font-size="12" fill="#7a8aa3" text-decoration="line-through">登录 GitHub</text>
+      </g>
+      <g transform="translate(0, 328)">
+        <rect width="14" height="14" rx="3" fill="none" stroke="#c6d1e5" stroke-width="1.5"/>
+        <text x="22" y="11" font-size="12" fill="#1c2b4a">导出 keybindings</text>
+      </g>
+    </g>
+
+    <rect x="0" y="491" width="400" height="29" fill="#fafafa"/>
+    <rect x="0" y="491" width="400" height="1" fill="#ebebeb"/>
+    <text x="14" y="510" font-size="10" fill="#4caf50" font-weight="700">✓</text>
+    <text x="24" y="510" font-size="10" fill="#999">已保存 · 23:14</text>
+  </g>
+</svg>

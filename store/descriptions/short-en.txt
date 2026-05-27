@@ -1,0 +1,1 @@
+One notebook per website. Click the icon to write Markdown notes for the current domain. Shortcuts, image pasting, dark mode, auto-save. 100% local, zero tracking.
